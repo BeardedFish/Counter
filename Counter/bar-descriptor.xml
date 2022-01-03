@@ -63,23 +63,21 @@
 
     <!-- Description, displayed in the BlackBerry 10 application installer.
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
-    <description>The Counter application</description>
 
     <!-- Copyright information. Optional. -->
     <!-- <copyright></copyright> -->
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <description>Simple counting app for BlackBerry 10 OS.</description>
+    <initialWindow>
+        <autoOrients>true</autoOrients>
+    </initialWindow>
     <authorId>gYAAgLfzXBHqta88p7Apqj2G_uU</authorId>
     <author>Darian Benam</author>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
-
-    <initialWindow>
-        <autoOrients>true</autoOrients>
-        <systemChrome>none</systemChrome>
-    </initialWindow>
-
+    
     <!--  The icon for the application, which should be 114x114. -->
     <icon>
         <image>icon.png</image>
