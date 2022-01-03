@@ -36,14 +36,7 @@ Page {
     
     Container {
         layout: DockLayout {}
-        
-        background: appBackground.imagePaint
-        attachedObjects: [
-            ImagePaintDefinition {
-                id: appBackground
-                imageSource: "asset:///images/app_bg.png"
-            }
-        ]
+        background: Application.themeSupport.theme.colorTheme.style == VisualStyle.Bright ? Color.create("#0074cc") : Color.create("#121212")
         
         Container {
             layout: StackLayout {}

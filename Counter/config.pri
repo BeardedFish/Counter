@@ -36,7 +36,6 @@ simulator {
 
 config_pri_assets {
     OTHER_FILES += \
-        $$quote($$BASEDIR/assets/images/app_bg.png) \
         $$quote($$BASEDIR/assets/images/app_splashscreen.png) \
         $$quote($$BASEDIR/assets/images/ic_add.png) \
         $$quote($$BASEDIR/assets/images/ic_reload.png) \
