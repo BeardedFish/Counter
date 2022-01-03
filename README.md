@@ -1,6 +1,17 @@
 # Counter
-A simple counting app made for devices running Blackberry OS 10. The app has three buttons. A green button for adding 1 to the counter, a red button for subtracting 1 from the counter, and a white button for setting the counter back to 0.
+
+![Platform: BlackBerry 10 OS](https://img.shields.io/badge/platform-BlackBerry%2010%20OS-blue "Platform: BlackBerry 10 OS")
+![Last Commit](https://img.shields.io/github/last-commit/BeardedFish/Counter "Last Commit")
+
+A simple counting app made for devices running BlackBerry 10 OS.
+
+The app has three buttons:
+* Green button increments the counter by one
+* Red button decrements the counter by one
+* White button resets the counter to zero
 
 # Screenshots
-<img src="https://raw.githubusercontent.com/BeardedFish/Counter/master/Screenshots/screenshot1.png" width="250">
-<img src="https://raw.githubusercontent.com/BeardedFish/Counter/master/Screenshots/screenshot2.png" width="250">
+
+![Counter app with the value zero](Screenshots/screenshot1.png "Counter app with the value zero")
+
+![Counter app with the value five](Screenshots/screenshot2.png "Counter app with the value five")
