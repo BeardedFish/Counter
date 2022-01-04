@@ -31,7 +31,7 @@ Page {
             attachedObjects: [
                 SystemToast {
                     id: preferencesSaveSuccessToast
-                    body: "Preferences have been saved succesfully!"
+                    body: "Preferences have been saved successfully!"
                 },
                 SystemToast {
                     id: preferencesSaveErrorToast
