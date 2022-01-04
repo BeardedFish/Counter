@@ -59,13 +59,13 @@ void UserPreferences::load()
 
         while (!preferencesFileStream.atEnd())
         {
-           QString currentLine = preferencesFileStream.readLine();
-           QStringList currentLineTokens = currentLine.split(' ');
+            QString currentLine = preferencesFileStream.readLine();
+            QStringList currentLineTokens = currentLine.split(' ');
 
-           if (currentLineTokens.length() >= 2)
-           {
-               m_preferencesMap[currentLineTokens[0]] = currentLineTokens[1];
-           }
+            if (currentLineTokens.length() >= 2)
+            {
+                m_preferencesMap[currentLineTokens[0]] = currentLineTokens[1];
+            }
         }
 
         preferencesFile.close();
