@@ -36,11 +36,18 @@ simulator {
 
 config_pri_assets {
     OTHER_FILES += \
-        $$quote($$BASEDIR/assets/images/app_splashscreen.png) \
-        $$quote($$BASEDIR/assets/images/ic_add.png) \
-        $$quote($$BASEDIR/assets/images/ic_reload.png) \
-        $$quote($$BASEDIR/assets/images/ic_subtract.png) \
-        $$quote($$BASEDIR/assets/main.qml)
+        $$quote($$BASEDIR/assets/images/icons/ic_add.png) \
+        $$quote($$BASEDIR/assets/images/icons/ic_reload.png) \
+        $$quote($$BASEDIR/assets/images/icons/ic_subtract.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_1024x600.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_1280x720.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_1280x768.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_1440x1440.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_600x1024.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_720x1280.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_720x720.png) \
+        $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_768_1280.png) \
+        $$quote($$BASEDIR/assets/views/main.qml)
 }
 
 config_pri_source_group1 {
@@ -67,7 +74,16 @@ lupdate_inclusion {
         $$quote($$BASEDIR/../assets/*.qs) \
         $$quote($$BASEDIR/../assets/images/*.qml) \
         $$quote($$BASEDIR/../assets/images/*.js) \
-        $$quote($$BASEDIR/../assets/images/*.qs)
+        $$quote($$BASEDIR/../assets/images/*.qs) \
+        $$quote($$BASEDIR/../assets/images/icons/*.qml) \
+        $$quote($$BASEDIR/../assets/images/icons/*.js) \
+        $$quote($$BASEDIR/../assets/images/icons/*.qs) \
+        $$quote($$BASEDIR/../assets/images/splashscreens/*.qml) \
+        $$quote($$BASEDIR/../assets/images/splashscreens/*.js) \
+        $$quote($$BASEDIR/../assets/images/splashscreens/*.qs) \
+        $$quote($$BASEDIR/../assets/views/*.qml) \
+        $$quote($$BASEDIR/../assets/views/*.js) \
+        $$quote($$BASEDIR/../assets/views/*.qs)
 
     HEADERS += \
         $$quote($$BASEDIR/../src/*.h) \

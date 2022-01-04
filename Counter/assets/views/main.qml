@@ -59,7 +59,7 @@ Page {
                 accessibility.name: "Increment"
                 bottomMargin: 40
                 color: Color.Green
-                imageSource: "asset:///images/ic_add.png"
+                imageSource: "asset:///images/icons/ic_add.png"
                 horizontalAlignment: HorizontalAlignment.Center
                 
                 onClicked: {
@@ -72,7 +72,7 @@ Page {
                 accessibility.name: "Decrement"
                 bottomMargin: 40
                 color: Color.Red
-                imageSource: "asset:///images/ic_subtract.png"
+                imageSource: "asset:///images/icons/ic_subtract.png"
                 horizontalAlignment: HorizontalAlignment.Center
                 enabled: false
                 
@@ -85,7 +85,7 @@ Page {
                 id: btnReset
                 accessibility.name: "Reset Counter"
                 color: Color.White
-                imageSource: "asset:///images/ic_reload.png"
+                imageSource: "asset:///images/icons/ic_reload.png"
                 horizontalAlignment: HorizontalAlignment.Center
                 enabled: false
                 

@@ -29,11 +29,6 @@ namespace bb
 
 class QTranslator;
 
-/*!
- * @brief Application UI object
- *
- * Use this object to create and init app UI, to create context objects, to register the new meta types etc.
- */
 class ApplicationUI : public QObject
 {
     Q_OBJECT
@@ -47,4 +42,4 @@ private:
     bb::cascades::LocaleHandler* m_pLocaleHandler;
 };
 
-#endif /* ApplicationUI_HPP_ */
+#endif // ApplicationUI_HPP_

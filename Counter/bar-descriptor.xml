@@ -17,15 +17,6 @@
 
 -->
 <qnx xmlns="http://www.qnx.com/schemas/application/1.0">
-
-<!-- BlackBerry 10 application descriptor file.
-
-    Specifies parameters for identifying, installing, and launching native applications on BlackBerry 10.
-
--->
-
-    <!-- A universally unique application identifier. Must be unique across all BlackBerry 10 applications.
-         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
     <id>com.darianbenam.Counter</id>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
@@ -44,59 +35,56 @@
        <platformArchitecture>x86</platformArchitecture>
        <asset path="x86/o-g/Counter" entry="true" type="Qnx/Elf">Counter</asset>
     </configuration>
-
-    <!-- The name that is displayed in the BlackBerry 10 application installer.
-         May have multiple values for each language. See samples or xsd schema file. Optional. -->
     <name>Counter</name>
-
-    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
-         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
-         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
-    <versionNumber>1.0.0</versionNumber>
-
-    <!-- Fourth digit segment of the package version. First three segments are taken from the
-         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+    <versionNumber>1.0.1</versionNumber>
     <buildId>1</buildId>
-
-    <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
-    <!-- <versionLabel></versionLabel> -->
-
-    <!-- Description, displayed in the BlackBerry 10 application installer.
-         May have multiple values for each language. See samples or xsd schema file. Optional. -->
-
-    <!-- Copyright information. Optional. -->
-    <!-- <copyright></copyright> -->
-
-    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <description>Simple counting app for BlackBerry 10 OS.</description>
     <initialWindow>
         <autoOrients>true</autoOrients>
     </initialWindow>
+    <splashScreens>
+       <image>splashscreen_1024x600.png</image>
+       <image>splashscreen_1280x720.png</image>
+       <image>splashscreen_1280x768.png</image>
+       <image>splashscreen_1440x1440.png</image>
+       <image>splashscreen_600x1024.png</image>
+       <image>splashscreen_720x1280.png</image>
+       <image>splashscreen_720x720.png</image>
+       <image>splashscreen_768_1280.png</image>
+    </splashScreens>
+    <icon>
+       <image>icon_110x110.png</image>
+       <image>icon_144x144.png</image>
+       <image>icon_86x86.png</image>
+       <image>icon_90x90.png</image>
+       <image>icon_96x96.png</image>
+    </icon>
     <authorId>gYAAgLfzXBHqta88p7Apqj2G_uU</authorId>
     <author>Darian Benam</author>
-
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
-    
-    <!--  The icon for the application, which should be 114x114. -->
-    <icon>
-        <image>icon.png</image>
-    </icon>
-
-    <asset path="icon.png">icon.png</asset>
-    <asset path="assets">assets</asset>
-
-    <!-- Locale support -->
+    <asset path="icon_144x144.png">icon_144x144.png</asset>
+    <asset path="icon_110x110.png">icon_110x110.png</asset>
+    <asset path="icon_86x86.png">icon_86x86.png</asset>
+    <asset path="icon_90x90.png">icon_90x90.png</asset>
+    <asset path="icon_96x96.png">icon_96x96.png</asset>
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
-
-    <!-- Request permission to execute native code.  Required for native applications. -->
+    <asset path="assets/images/icons" dest="assets/images/icons">
+        <include name="*.png"/>
+    </asset>
+    <asset path="assets/views" dest="assets/views">
+        <include name="*.qml"/>
+    </asset>
+    <asset path="assets/images/splashscreens/splashscreen_1024x600.png">splashscreen_1024x600.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_1280x720.png">splashscreen_1280x720.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_1280x768.png">splashscreen_1280x768.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_1440x1440.png">splashscreen_1440x1440.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_600x1024.png">splashscreen_600x1024.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_720x1280.png">splashscreen_720x1280.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_720x720.png">splashscreen_720x720.png</asset>
+    <asset path="assets/images/splashscreens/splashscreen_768_1280.png">splashscreen_768_1280.png</asset>
     <permission system="true">run_native</permission>
     <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
-    
-    <!-- Splash screen for that app that will show the moment the app launches -->
-    <splashScreens>
-   		<image>assets/images/app_splashscreen.png</image>
-   	</splashScreens>
 </qnx>
