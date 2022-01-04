@@ -1,4 +1,8 @@
-/*
+/* File Name:      main.cpp
+ * Modified By:    Darian Benam (GitHub: https://github.com/BeardedFish/)
+ *
+ * ----------------------------------------------------------------------
+ *
  * Copyright (c) 2011-2015 BlackBerry Limited.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,24 +15,17 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+ * limitations under the License. */
 
 #include "applicationui.hpp"
-
 #include <bb/cascades/Application>
-
 #include <QLocale>
 #include <QTranslator>
 
-#include <Qt/qdeclarativedebug.h>
-
-using namespace bb::cascades;
-
-Q_DECL_EXPORT int main(int argc, char **argv)
+Q_DECL_EXPORT int main(int argc, char* argv[])
 {
-    Application app(argc, argv);
-    ApplicationUI appui;
+    bb::cascades::Application app(argc, argv);
+    ApplicationUI applicationUi;
 
-    return Application::exec();
+    return bb::cascades::Application::exec();
 }

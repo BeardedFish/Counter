@@ -1,4 +1,8 @@
-/*
+/* File Name:      applicationui.hpp
+ * Modified By:    Darian Benam (GitHub: https://github.com/BeardedFish/)
+ *
+ * ----------------------------------------------------------------------
+ *
  * Copyright (c) 2011-2015 BlackBerry Limited.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,12 +15,13 @@
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+ * limitations under the License. */
 
-#ifndef ApplicationUI_HPP_
-#define ApplicationUI_HPP_
+#ifndef APPLICATIONUI_HPP
+#define APPLICATIONUI_HPP
 
+#include "usrprefs.hpp"
+#include <bb/cascades/AbstractPane>
 #include <QObject>
 
 namespace bb
@@ -32,14 +37,17 @@ class QTranslator;
 class ApplicationUI : public QObject
 {
     Q_OBJECT
+    QTranslator* m_pTranslator;
+    bb::cascades::LocaleHandler* m_pLocaleHandler;
+    UserPreferences* m_pUserPreferences;
+    int m_counterValue;
 public:
     ApplicationUI();
     virtual ~ApplicationUI() {}
 private slots:
     void onSystemLanguageChanged();
 private:
-    QTranslator* m_pTranslator;
-    bb::cascades::LocaleHandler* m_pLocaleHandler;
+    void updateUiPreferenceControls(bb::cascades::AbstractPane* rootPane);
 };
 
-#endif // ApplicationUI_HPP_
+#endif // APPLICATIONUI_HPP

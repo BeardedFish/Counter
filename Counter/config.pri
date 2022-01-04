@@ -37,6 +37,7 @@ simulator {
 config_pri_assets {
     OTHER_FILES += \
         $$quote($$BASEDIR/assets/images/icons/ic_add.png) \
+        $$quote($$BASEDIR/assets/images/icons/ic_add_subtract.png) \
         $$quote($$BASEDIR/assets/images/icons/ic_reload.png) \
         $$quote($$BASEDIR/assets/images/icons/ic_subtract.png) \
         $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_1024x600.png) \
@@ -47,15 +48,20 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_720x1280.png) \
         $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_720x720.png) \
         $$quote($$BASEDIR/assets/images/splashscreens/splashscreen_768_1280.png) \
-        $$quote($$BASEDIR/assets/views/main.qml)
+        $$quote($$BASEDIR/assets/views/counter.qml) \
+        $$quote($$BASEDIR/assets/views/main.qml) \
+        $$quote($$BASEDIR/assets/views/preferences.qml)
 }
 
 config_pri_source_group1 {
     SOURCES += \
         $$quote($$BASEDIR/src/applicationui.cpp) \
-        $$quote($$BASEDIR/src/main.cpp)
+        $$quote($$BASEDIR/src/main.cpp) \
+        $$quote($$BASEDIR/src/usrprefs.cpp)
 
-    HEADERS += $$quote($$BASEDIR/src/applicationui.hpp)
+    HEADERS += \
+        $$quote($$BASEDIR/src/applicationui.hpp) \
+        $$quote($$BASEDIR/src/usrprefs.hpp)
 }
 
 CONFIG += precompile_header
