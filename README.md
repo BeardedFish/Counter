@@ -12,6 +12,8 @@ The app has three buttons:
 
 # Screenshots
 
-![Counter app with the value zero](Screenshots/screenshot1.png "Counter app with the value zero")
+![Screenshot of the counter tab](Screenshots/counter-tab.png "Screenshot of the counter tab")
 
-![Counter app with the value five](Screenshots/screenshot2.png "Counter app with the value five")
+![Screenshot of the tab menu](Screenshots/tab-menu.png "Screenshot of the tab menu")
+
+![Screenshot of the preferences tab](Screenshots/preferences-tab.png "Screenshot of the preferences tab")
