@@ -40,7 +40,6 @@ class ApplicationUI : public QObject
     QTranslator* m_pTranslator;
     bb::cascades::LocaleHandler* m_pLocaleHandler;
     UserPreferences* m_pUserPreferences;
-    int m_counterValue;
 public:
     ApplicationUI();
     virtual ~ApplicationUI() {}
